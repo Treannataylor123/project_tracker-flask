@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}STUDENT SEARCH{% endblock %}
+
+{% block body %}
+<form action = "/add_student" method='POST'>
+    <label>Please Enter First Name</label>
+    <input type = "text" name="first_name"> 
+    <label>Please Enter Last Name:</label>
+    <input type = "text" name="last_name"> 
+    <label>Please Enter Github</label>
+    <input type = "text" name="github"> 
+    <input type="submit">
+</form>
+{% endblock %}
